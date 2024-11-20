@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Grocery Store</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-icons-logo">
+      <a href="./home.html">
+        <img src="./source/grocery.png" alt="Grocery Logo">
+      </a>
+    </div>
+    <div class="header-icons">
+      <a href="./profile.html">
+        <img src="./source/profile.png" alt="Profile Icon">
+      </a>
+      <a href="./cart.html">
+        <img src="./source/cart.png" alt="Cart Icon">
+      </a>
+    </div>
+  </header>
+
+  <h6>Freshness at Your Fingertips 🍉</h6>
+
+
+  <div id="product-container" class="product-container"></div>
+
+  <script>
+   fetch('./products.json')
+  .then(res => res.json())
+  .then(products => {
+    const container = document.getElementById('product-container');
+    products.forEach(product => {
+      container.innerHTML += `
+        <div class="card">
+          <img src="${product.image}" alt="${product.name}" class="product-image">
+          <div class="product-name">${product.name}</div>
+          <div class="product-price">${product.price}</div>
+          <a href="#" class="add-to-cart">
+            Add to Cart
+            <img src="./source/cart.png" alt="Cart Icon">
+          </a>
+        </div>
+      `;
+    });
+  })
+  .catch(err => console.error('Failed to load products:', err));
+  </script>
+
+</body>
+</html>

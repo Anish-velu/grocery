@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sign-style.css">
+</head>
+<body>
+    <div class="login-container">
+      <div class="login-content">
+
+        <div class="login-title">
+          Sign-into the system
+        </div>
+        <form action="submit">
+         
+            <div>
+                <input type="text" required placeholder="Enter your Name" >
+            </div>
+          <div>
+                <input type="text" required placeholder="Enter your Id" >
+            </div>
+          <div>
+              <input type="text" required placeholder="Enter your Mail-id" >
+          </div>
+            
+          <div>
+               <input type="password" required placeholder="Enter your Password">
+          </div>
+
+          <div>
+            <input type="password" required placeholder="Re-conform your Password">
+       </div>
+          
+
+          <div class="button-container">
+            <button >submit</button>
+          </div>
+         
+        <p  id="route-text" text-decoration: underline;>already have an acc?</p>
+        </form>
+
+      </div>
+       
+    </div>
+      <script>
+        document.getElementById('route-text').addEventListener('click', function () {
+
+    window.location.href = './login.html'; 
+  });
+  </script>
+</body>
+
+</script>
+</html>

@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Fresh Apples",
+    "price": "₹120/kg",
+    "image": "./source/grocery.png"
+  },
+  {
+    "name": "Bananas",
+    "price": "₹60/dozen",
+    "image": "./source/cart.png"
+  },
+  {
+    "name": "Fresh Milk",
+    "price": "₹50/litre",
+    "image": "./source/cart.png"
+  },
+  {
+    "name": "Fresh Apples",
+    "price": "₹120/kg",
+    "image": "./source/grocery.png"
+  },
+  {
+    "name": "Bananas",
+    "price": "₹60/dozen",
+    "image": "./source/cart.png"
+  },
+  {
+    "name": "Fresh Milk",
+    "price": "₹50/litre",
+    "image": "./source/cart.png"
+  },
+  {
+    "name": "Fresh Apples",
+    "price": "₹120/kg",
+    "image": "./source/grocery.png"
+  },
+  {
+    "name": "Bananas",
+    "price": "₹60/dozen",
+    "image": "./source/cart.png"
+  },
+  {
+    "name": "Fresh Milk",
+    "price": "₹50/litre",
+    "image": "./source/cart.png"
+  }
+]
